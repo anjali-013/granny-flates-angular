@@ -378,13 +378,13 @@ span.material-symbols-outlined {
     }
 
     a.get-btn-txt {
-        margin-left: 0 !important;
         font-size: 16px !important;
     }
 
     .get-start-btn {
         height: 50px;
         width: 200px;
+        margin-left: 0 !important;
     }
 
     .wel_sub-img p {
@@ -437,12 +437,12 @@ span.material-symbols-outlined {
         font-size: 18px !important;
     }
 
-    .how-its-work-btn[_ngcontent-ng-c182552770] {
+    .how-its-work-btn {
         height: 50px;
         width: 180px;
     }
 
-    .how-its-work-btn[_ngcontent-ng-c4244100165] {
+    .how-its-work-btn{
         height: 45px;
         width: 170px;
     }
@@ -763,26 +763,29 @@ span.material-symbols-outlined {
     span.material-symbols-outlined {
         left: 30%;
     }
-    input#mat-input-0[_ngcontent-ng-c4244100165] {
+
+    input#mat-input-0 {
         padding-left: 30px;
     }
+
     button.studio {
         margin-right: 18px !important;
     }
 }
 
 @media (max-width: 854px) {
-    span.material-symbols-outlined[_ngcontent-ng-c4244100165] {
+    span.material-symbols-outlined{
         left: 28.5%;
     }
 }
 
 @media (max-width: 821px) {
-    span.material-symbols-outlined[_ngcontent-ng-c4244100165] {
+    span.material-symbols-outlined{
         left: 28%;
         padding-left: 0;
     }
-    input#mat-input-0[_ngcontent-ng-c4244100165][_ngcontent-ng-c4244100165] {
+
+    input#mat-input-0 {
         padding-left: 38px;
     }
 }
@@ -791,11 +794,13 @@ span.material-symbols-outlined {
     span.material-symbols-outlined {
         left: 27% !important;
     }
+
     img.work-sub-img {
         height: 530px !important;
         width: 680px;
         position: static;
     }
+
     input#mat-input-0 {
         padding-left: 36px !important;
     }
@@ -1028,9 +1033,11 @@ span.material-symbols-outlined {
     span.material-symbols-outlined {
         left: 18% !important;
     }
-    input#mat-input-0[_ngcontent-ng-c4244100165] {
+
+    input#mat-input-0 {
         padding-left: 26px !important;
     }
+
     .subsribe-text h2 {
         font-size: 22px !important;
     }
@@ -1065,9 +1072,11 @@ span.material-symbols-outlined {
         left: -19px !important;
         width: 17px !important;
     }
-.material-symbols-outlined {
+
+    .material-symbols-outlined {
         font-size: 15px !important;
     }
+
     h1 {
         font-size: 32px !important;
     }
@@ -1091,25 +1100,30 @@ span.material-symbols-outlined {
     .feedback-page h3 {
         font-size: 15px !important;
     }
-    .subscribe-btn[_ngcontent-ng-c4244100165] {
+
+    .subscribe-btn {
         height: 24px;
         width: 75px;
     }
-    input#mat-input-0[_ngcontent-ng-c4244100165] {
+
+    input#mat-input-0{
         height: 24px;
         font-size: 10px;
         width: 160px;
     }
-    input#mat-input-0[_ngcontent-ng-c4244100165][_ngcontent-ng-c4244100165] {
+
+    input#mat-input-0{
         padding-left: 20px !important;
     }
 
-    span.material-symbols-outlined[_ngcontent-ng-c4244100165] {
+    span.material-symbols-outlined {
         left: 24% !important;
     }
-    a.subscribe-btn-txt[_ngcontent-ng-c4244100165] {
+
+    a.subscribe-btn-txt {
         font-size: 12px !important;
     }
+
     input#mat-input-0 {
         width: 170px;
     }
@@ -1141,7 +1155,7 @@ span.material-symbols-outlined {
     .material-symbols-outlined {
         font-size: 15px !important;
     }
-    
+
     .wel-text p {
         font-size: 12px !important;
         margin-bottom: 15px !important;
@@ -1173,6 +1187,7 @@ span.material-symbols-outlined {
         width: 170px;
         padding-left: 22px !important;
     }
+
     .get-start-btn {
         height: 30px !important;
         width: 120px !important;
@@ -1195,6 +1210,7 @@ span.material-symbols-outlined {
     button.studio {
         margin-right: 25px !important;
     }
+
     .home_page p {
         font-size: 12px !important;
         margin-bottom: 15px !important;
@@ -1278,14 +1294,17 @@ span.material-symbols-outlined {
     .subsribe-text h2 {
         font-size: 19px !important;
     }
+
     img.work-sub-img {
         height: 320px !important;
         width: 345px !important;
     }
-    .material-symbols-outlined{
+
+    .material-symbols-outlined {
         font-size: 13px !important;
     }
-    span.material-symbols-outlined[_ngcontent-ng-c4244100165][_ngcontent-ng-c4244100165] {
+
+    span.material-symbols-outlined {
         left: 23% !important;
     }
 }
@@ -1293,6 +1312,10 @@ span.material-symbols-outlined {
 @media (max-width: 345px) {
     p.project-title {
         left: 8% !important;
+    }
+
+    img.work-sub-img {
+        width: 335px !important;
     }
 
     p.project-title:before {
@@ -1303,16 +1326,20 @@ span.material-symbols-outlined {
     .set p {
         margin-left: 10px;
     }
+
     input#mat-input-0 {
         width: 150px !important;
         padding-left: 20px !important;
     }
+
     .price p {
         margin-left: 10px;
     }
+
     span.material-symbols-outlined {
         left: 23% !important;
     }
+
     button.studio {
         margin-right: 27px !important;
     }
@@ -1322,10 +1349,12 @@ span.material-symbols-outlined {
     .wel-text {
         padding: 20px 30px 20px 30px !important;
     }
-    input#mat-input-0{
+
+    input#mat-input-0 {
         width: 160px !important;
         padding-left: 18px !important;
     }
+
     .logo-img {
         height: 15px !important;
         width: 130px !important;
@@ -1343,6 +1372,7 @@ span.material-symbols-outlined {
     p.project-title {
         left: 8% !important;
     }
+
     .get-start-btn {
         margin-bottom: 15px;
     }
@@ -1355,10 +1385,11 @@ span.material-symbols-outlined {
     a.get-btn-txt {
         font-size: 9px !important;
     }
-   
-    span.material-symbols-outlined[_ngcontent-ng-c4244100165][_ngcontent-ng-c4244100165] {
-        left:22% !important;
+
+    span.material-symbols-outlined {
+        left: 22% !important;
     }
+
     .wel_sub-img p {
         font-size: 10px !important;
         margin-bottom: 15px !important;
@@ -1374,9 +1405,11 @@ span.material-symbols-outlined {
         height: 40px !important;
         margin-left: 12px !important;
     }
-    .material-symbols-outlined{
+
+    .material-symbols-outlined {
         font-size: 13px !important;
     }
+
     h2 {
         font-size: 20px !important;
     }
@@ -1389,9 +1422,11 @@ span.material-symbols-outlined {
     .home_page p {
         font-size: 11px !important;
     }
-    .subscribe-btn{
-        width: 70px !important; 
+
+    .subscribe-btn {
+        width: 70px !important;
     }
+
     .subsribe-text h2 {
         font-size: 16px !important;
     }

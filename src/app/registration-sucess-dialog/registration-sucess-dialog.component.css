@@ -1,0 +1,245 @@
+p.dialog-text {
+    margin-bottom: 5px !important;
+}
+
+button.dialog-btn {
+    font-size: 18px;
+    height: 40px;
+    width: 120px;
+    color: white;
+    background-color: #4b4b4b;
+    border: 0;
+}
+
+p.text {
+    margin-bottom: 0 !important;
+}
+
+button.dialog-btn:hover {
+    background-color: #208678;
+}
+
+.dialog-box1 {
+    height: 49rem;
+    padding: 17rem 0px;
+    background-color: #F3FCFB;
+}
+
+
+@media (max-width: 1281px) {
+.dialog-box1 {
+    height: 46rem;
+    padding: 16rem 0rem;
+}
+
+}
+
+@media (max-width: 1025px) {
+    .dialog-box1 {
+        height: 36rem;
+        padding: 12rem 0rem;
+    }
+    small.require {
+        font-size: 14px !important;
+    }
+    p.text {
+        font-size: 22px;
+    }
+    p.dialog-text {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 854px) {
+.error-message1[_ngcontent-ng-c2744354876] {
+    font-size: 14px;
+}
+}
+
+@media (max-width: 821px) {
+    .form-control-lg[_ngcontent-ng-c2744354876] {
+        font-size: 15px;
+    }
+    small.require[_ngcontent-ng-c2744354876] {
+        font-size: 14px !important;
+    }
+    p.dialog-text {
+        margin-bottom: 5px !important;
+        font-size: 22px;
+    }
+
+    p.text {
+        font-size: 22px;
+        margin-bottom: 0 !important;
+    }
+    .error-message1 {
+        font-size: 14px;
+    }
+    input#email-id {
+        font-size: 17px;
+    }
+    .dialog-box1 {
+        height: 36rem;
+        padding: 12rem 0rem;
+    }
+
+}
+
+@media (max-width: 769px) {
+    .dialog-box1{
+        height: 28rem !important;
+        padding: 8rem 2rem;
+    }
+
+    p.dialog-text {
+        margin-bottom: 0px !important;
+    }
+
+    button.dialog-btn {
+        font-size: 16px;
+        height: 35px;
+        width: 105px;
+    }
+    p.dialog-text{
+        font-size: 20px;
+}
+}
+
+
+
+@media (max-width: 541px) {
+    p.dialog-text {
+        font-size: 20px;
+    }
+    p.text[_ngcontent-ng-c3935229651] {
+        font-size: 18px;
+    }
+
+    .dialog-box1{
+        height: 28rem !important;
+        padding: 7rem 3rem;
+    }
+
+}
+
+@media (max-width: 431px) {
+    mat-dialog-content p {
+        font-size: 13px;
+    }
+
+    button.dialog-btn {
+        font-size: 13px;
+        height: 30px;
+        width: 95px;
+    }
+    .error-message1{
+        font-size: 12px;
+    }
+
+    .dialog-box1 {
+        height: 28rem !important;
+        padding: 7rem 2rem;
+    }
+}
+
+@media (max-width: 426px) {
+
+    p.dialog-text {
+        margin-bottom: 0px !important;
+    }
+
+    mat-dialog-content p {
+        font-size: 15px !important;
+    }
+
+    button.dialog-btn {
+        font-size: 15px;
+        height: 33px;
+        width: 100px;
+    }
+
+    .dialog-box1{
+        height: 28rem !important;
+        padding: 8rem 0px;
+    }
+
+}
+
+@media (max-width: 413px) {
+
+    .dialog-box1 {
+        height: 27rem !important;
+        padding: 7rem 0px;
+    }
+    p.text{
+        font-size: 17px ;
+    }
+    mat-dialog-content p{
+        font-size: 16px !important;
+}
+
+}
+
+@media (max-width: 391px) {
+    mat-dialog-content p {
+        font-size: 15px !important;
+    }
+    .dialog-box1{
+    height: 27rem !important;
+    padding: 8rem 0px;
+
+}
+.form-control-lg{
+    font-size: 11px;
+}
+input#full-name[_ngcontent-ng-c2744354876] {
+    font-size: 11px;
+}
+}
+
+@media (max-width: 376px) {
+   
+    mat-dialog-content p {
+        font-size: 13px !important;
+    }
+    button.dialog-btn {
+        font-size: 13px;
+        height: 30px;
+        width: 90px;
+    }
+
+    .dialog-box1 {
+        height: 27rem !important;
+        padding: 8rem 0px !important;
+    }
+
+}
+
+@media (max-width: 361px) {
+    .mat-mdc-dialog-container .mat-mdc-dialog-title {
+        font-size: 17px !important;
+    }
+}
+
+@media (max-width: 345px) {
+    .dialog-box1 {
+    height: 26rem !important;
+    padding: 7rem 0rem !important;
+}
+
+}
+
+@media (max-width: 321px) {
+    .dialog-box1 {
+        height: 26rem !important;
+        padding: 8rem 0px !important;
+    }
+    button.dialog-btn {
+        font-size: 11px;
+        height: 28px;
+        width: 85px;
+    }
+    mat-dialog-content p{
+        font-size: 11px !important;
+    }
+}

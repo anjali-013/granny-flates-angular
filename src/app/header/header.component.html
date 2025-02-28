@@ -1,62 +1,67 @@
+
 <header>
-  
-   <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-     
-      <a href="/" class="navbar-logo">
-        <img src="../assets/images/Granny Flat.png" alt="Logo" class="logo-img" />
+
+      <a routerLink="/" class="navbar-logo">
+        <img src="../../assets/images/Granny Flat.png" alt="Logo" class="logo-img" />
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
-
-      <ul class="navbar-links" style="font-weight: 400;">
-        <li class="navbar-item"><a href="/" class="navbar-link">Home</a></li>
-        <li class="navbar-item"><a href="/about" class="navbar-link">About Us</a></li>
-        <li class="navbar-item"><a href="#service" class="navbar-link">Services</a></li>
-        <li class="navbar-item"><a href="/contact" class="navbar-link">Gallery</a></li>
-        <li class="navbar-item"><a href="/contact" class="navbar-link">Blog</a></li>
-        <li class="navbar-item"><a href="/contact" class="navbar-link">Contact</a></li>
-
-
-        <div class="sign-in-btn">
-          <!-- <a mat-flat-button href="/" target="_blank" class="sign-btn-txt">Sign In</a> -->
-          <button mat-raised-button (click)="openLogin()">Open Login Popup</button>
-
-
-        </div>
-      </ul>
-
-
-    </div>
-
-   </div>
-  </nav>
-
-<!-- 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-links">
+          <li class="navbar-item">
+            <a routerLink="/" class="navbar-link">{{ 'home' | translate }}</a>
+          </li>
+          <li class="navbar-item">
+            <a routerLink="/about" class="navbar-link">{{ 'about' | translate }}</a>
+          </li>
+          <li class="navbar-item">
+            <a routerLink="/services" class="navbar-link">{{ 'services' | translate }}</a>
+          </li>
+          <li class="navbar-item">
+            <a routerLink="/gallery"  class="navbar-link">{{ 'gallery' | translate }}</a>
+          </li>
+          <li class="navbar-item">
+            <a routerLink="/project" class="navbar-link">{{ 'blog' | translate }}</a>
+          </li>
+          <li class="navbar-item">
+            <a routerLink="/" class="navbar-link">{{ 'contact' | translate }}</a>
+          </li>
+
+
+          <li class="navbar-item dropdown">
+            <a class="navbar-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              {{ 'language' | translate }}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="nav-item">
+                <a class="dropdown-item" (click)="translateText('en')">{{ 'english' | translate }}</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" (click)="translateText('hi')">{{ 'hindi' | translate }}</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" (click)="translateText('de')">{{ 'german' | translate }}</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" (click)="translateText('fr')">{{ 'french' | translate }}</a>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+
+        <div class="sign-in-btn">
+          <button mat-raised-button (click)="openLogin()">{{ 'signIn' | translate }}</button>
         </div>
       </div>
+
     </div>
-  </nav> -->
-
-
-
-  
+  </nav>
 </header>

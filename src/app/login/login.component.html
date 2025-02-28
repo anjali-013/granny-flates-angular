@@ -1,19 +1,195 @@
-<h2>Login</h2>
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-  <mat-form-field>
-    <mat-label>Email</mat-label>
-    <input matInput formControlName="email" type="email" required />
-    <mat-error *ngIf="loginForm.get('email')?.invalid">Invalid email</mat-error>
-  </mat-form-field>
+<section id="form">
+  <div class="login-page" *ngIf="!isRegistrationOpen">
 
-  <mat-form-field>
-    <mat-label>Password</mat-label>
-    <input matInput formControlName="password" type="password" required />
-    <mat-error *ngIf="loginForm.get('password')?.invalid">Password is required</mat-error>
-  </mat-form-field>
+    <div class="px-5 ms-xl-4 mt-4 mb-2">
+      <div class="dialog-header">
+        <div class="close-btn" (click)="closeDialog()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
 
-  <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">
-    Login
-  </button>
-</form>
 
+      <div class="logo_img">
+        <img src="../assets/images/Granny Flat.png" alt="Logo" class="logo-image" />
+      </div>
+    </div>
+
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit()" style="width: 23rem;">
+      <h3 class="fw-bold mb-3" style="letter-spacing: 1px;">Log In</h3>
+
+      <!-- Email Input -->
+      <div data-mdb-input-init class="form-outline mb-2">
+        <label class="form-label" for="email-id">Email address</label>
+        <input type="email" id="email-id" [(ngModel)]="loginFormData.email" name="email-id" required email
+          class="form-control form-control-lg" #emailModel="ngModel" autocomplete="email" />
+        <div *ngIf="(emailModel.touched || loginForm.submitted) && emailModel.invalid" class="text-danger">
+          <small class="require" *ngIf="emailModel.errors?.['required']">Email is required.</small>
+          <small class="error" *ngIf="emailModel.errors?.['email']">Please enter a valid email address.</small>
+        </div>
+      </div>
+
+
+      <!-- Password Input -->
+      <div data-mdb-input-init class="form-outline mb-2">
+        <label class="form-label" for="loginPassword">Password</label>
+        <div class="input-group">
+          <input [type]="passwordVisible ? 'text' : 'password'" id="loginPassword" [(ngModel)]="loginFormData.password"
+            name="password" required minlength="6" class="form-control form-control-lg" #passwordModel="ngModel"
+            autocomplete="current-password" />
+          <span class="input-group-text" (click)="togglePasswordVisibility()">
+            <i class="fa-regular" [ngClass]="passwordVisible ? 'fa-eye' : 'fa-eye-slash '"></i>
+          </span>
+<!-- <button type="button" class="absolute inset-y-0 right-0 px-3 py-2 text-gray-500">
+                    <i class="fas fa-eye-slash"></i>
+                </button> -->
+
+        </div>
+        <div *ngIf="(passwordModel.touched || loginForm.submitted) && passwordModel.invalid" class="text-danger">
+          <small class="require" *ngIf="passwordModel.errors?.['required']">Password is required.</small>
+        </div>
+      </div>
+
+
+      <!-- Error Message -->
+      <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+      </div>
+
+      <!-- Submit Button -->
+      <div class="login-btn pt-2 mb-2">
+        <button class="button btn-lg btn-block" type="submit">
+          Login
+        </button>
+
+      </div>
+    </form>
+
+
+
+    <div class="sign-up">
+      <div class="create-acount">
+        <p class="not-acct-txt">Don't have an account? </p>
+      </div>
+
+      <div class="sign-up-btn-popup">
+        <button class="button1 btn-primary" (click)="toggleRegistration()">Register</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Registration Page -->
+
+  <div class="registration-page" *ngIf="isRegistrationOpen">
+    <div class="dialog-header">
+      <div class="close-btn" (click)="closeDialog()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+    <div class="px-5 ms-xl-4 mt-4 mb-2">
+      <div class="logo_img">
+        <img src="../assets/images/Granny Flat.png" alt="Logo" class="logo-image" />
+      </div>
+    </div>
+
+
+    <form #registrationForm="ngForm" (ngSubmit)="onRegisterBtn()" style="width: 23rem;">
+      <h3 class="fw-bold mb-3" style="letter-spacing: 1px;">Registration</h3>
+
+      <div data-mdb-input-init class="form-outline mb-2">
+        <label class="form-label" for="fullName">Full Name</label>
+        <input type="text" id="fullName" class="form-control form-control-lg" [(ngModel)]="registerFormData.fullName"
+          name="fullName" #fullName="ngModel" required (input)="clearError('fullName')" autocomplete="name" />
+        <small class="require" *ngIf="errorMessages.fullName">{{ errorMessages.fullName }}</small>
+      </div>
+
+
+      <div class="gender mb-2">
+        <p class="form-label" for="gender">Gender</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male"
+            [(ngModel)]="registerFormData.gender" required (change)="clearError('gender')" />
+          <label class="form-check-label" for="genderMale">Male</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female"
+            [(ngModel)]="registerFormData.gender" required (change)="clearError('gender')" />
+          <label class="form-check-label" for="genderFemale">Female</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" id="genderOther" value="Other"
+            [(ngModel)]="registerFormData.gender" required (change)="clearError('gender')" />
+          <label class="form-check-label" for="genderOther">Other</label>
+        </div><br>
+        <small class="require" *ngIf="errorMessages.gender">{{ errorMessages.gender }}</small>
+      </div>
+
+
+      <div data-mdb-input-init class="form-outline mb-2">
+        <label class="form-label" for="email">Email</label>
+        <input type="email" id="email" class="form-control form-control-lg" [(ngModel)]="registerFormData.email"
+          name="email" #emailModel="ngModel" required email (input)="clearError('email')" autocomplete="email" />
+        <div *ngIf="(emailModel.touched || registrationForm.submitted) && emailModel.invalid" class="text-danger">
+          <small class="require" *ngIf="emailModel.errors?.['required']">Email is required.</small>
+          <small class="error" *ngIf="emailModel.errors?.['email']">Please enter a valid email address.</small>
+        </div>
+      </div>
+
+      <div data-mdb-input-init class="form-outline mb-2">
+        <label class="form-label" for="password">Password</label>
+        <div class="input-group">
+          <input [type]="passwordVisible ? 'text' : 'password'" id="password" class="form-control form-control-lg"
+            [(ngModel)]="registerFormData.password" (paste)="disableCopyPaste($event)" (copy)="disableCopyPaste($event)"
+            (cut)="disableCopyPaste($event)" name="password" #password="ngModel" required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+            (input)="clearError('password')" autocomplete="new-password" />
+          <span class="input-group-text" (click)="togglePasswordVisibility()">
+            <i class="fa-regular" [ngClass]="passwordVisible ? 'fa-eye' : 'fa-eye-slash'"></i>
+          </span>
+        </div>
+
+        <small class="require" *ngIf="errorMessages.password">{{ errorMessages.password }}</small>
+      </div>
+
+
+
+
+      <div data-mdb-input-init class="form-outline mb-2">
+        <label class="form-label" for="confirmPassword">Confirm Password</label>
+        <div class="input-group">
+          <input [type]="confirmPasswordVisible ? 'text' : 'password'" id="confirmPassword"
+            class="form-control form-control-lg" [(ngModel)]="registerFormData.confirmPassword"
+            (paste)="disableCopyPaste($event)" (copy)="disableCopyPaste($event)" (cut)="disableCopyPaste($event)"
+            name="confirmPassword" #confirmPassword="ngModel" required (input)="clearError('confirmPassword')"
+            autocomplete="new-password" />
+          <span class="input-group-text" (click)="toggleConfirmPasswordVisibility()">
+            <i class="fa-regular" [ngClass]="confirmPasswordVisible ? 'fa-eye' : 'fa-eye-slash'"></i>
+          </span>
+        </div>
+        <small class="require" *ngIf="errorMessages.confirmPassword">{{ errorMessages.confirmPassword }}</small>
+      </div>
+
+
+
+      <div *ngIf="errorMessages.general" class="error-message">{{ errorMessages.general }}</div>
+
+      <div class="acct-btn pt-2 mb-2">
+        <button type="submit" class="btn1 btn-info1 btn-lg btn-block">Create an Account</button>
+      </div>
+    </form>
+
+
+    <div class="sign-in">
+      <div class="login-acount">
+        <p class="not-acct-txt">Already have an account? </p>
+      </div>
+
+      <div class="sign-in-btn-popup">
+        <button class="button1 btn-primary" (click)="toggleRegistration()">Login</button>
+      </div>
+    </div>
+  </div>
+
+</section>

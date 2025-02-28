@@ -1,5 +1,7 @@
 <!-- welcome pg_start -->
-<section>
+<main>
+<!-- <h1>Test : {{Title}}</h1> -->
+<section id="home">
     <div class="welcome_page py_0">
         <div class="container">
             <div class="row">
@@ -84,7 +86,7 @@
                 <div class="thumbnail item">
                     <a href="/">
                         <mat-card class="mat-elevation-z4">
-                            <img src="assets/images/s2.png" class="img-responsive" />
+                             <img src="assets/images/s2.png" class="img-responsive" />
                             <mat-card-content>
                                 <div class="set">
                                     <p style="font-weight: 600;">{{slideheading1}}</p>
@@ -236,7 +238,7 @@
 <!-- home_page_end -->
 
 <!-- project_page_start -->
-<section>
+<section id="project">
     <div class="project_page py_0">
         <div class="container">
             <h2>Our Completed <span>Projects</span></h2>
@@ -378,8 +380,6 @@
     </div>
 </section>
 
-
-
 <!--project_page_end  -->
 
 <!-- feedback-page-start -->
@@ -395,26 +395,7 @@
                 </div>
 
                 <div class="col-xl-6 col-lg-6 col-md-12 col-12">
-                    <!-- <owl-carousel-o [options]="carouselOptions">
-                        <ng-container *ngFor="let feedback of feedbackList">
-                            <ng-template carouselSlide>
-                                <div class="feed">
-                                    <div class="feed-container">
-                                        <img class="feed-img" [src]="feedback.image" alt="Feedback Image">
-                                        <div class="txt-feed">
-                                            <div class="star">
-                                                <i class="fa-solid fa-star" *ngFor="let star of feedback.stars"></i>
-                                            </div>
-                                            <p class="feed-title">{{ feedback.title }}</p>
-                                            <p class="name">{{ feedback.location }}</p>
-                                            <p class="feed-text" style="font-style: italic;">{{ feedback.text }}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </ng-template>
-                        </ng-container>
-                    </owl-carousel-o> -->
-
+            
                     <div id="owl-example3" class="owl-carousel owl-theme">
 
                         <div class="thumbnail item">
@@ -556,3 +537,5 @@
 </section>
 
 <!-- Subscribe-page-end-->
+
+</main>

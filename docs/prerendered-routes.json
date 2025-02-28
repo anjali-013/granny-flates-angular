@@ -1,0 +1,16 @@
+{
+  "routes": {
+    "/granny-flates-angular": {},
+    "/granny-flates-angular/about": {},
+    "/granny-flates-angular/carousal": {},
+    "/granny-flates-angular/footer": {},
+    "/granny-flates-angular/gallery": {},
+    "/granny-flates-angular/header": {},
+    "/granny-flates-angular/home": {},
+    "/granny-flates-angular/project": {},
+    "/granny-flates-angular/services": {},
+    "/granny-flates-angular/sign in": {},
+    "/granny-flates-angular/sign up": {},
+    "/granny-flates-angular/thank-you": {}
+  }
+}

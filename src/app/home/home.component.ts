@@ -1,12 +1,10 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { FloatLabelType, } from '@angular/material/form-field';
 import { ChangeDetectionStrategy } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { FormBuilder, FormControl } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 import { map } from 'rxjs/operators';
 import { AfterViewInit } from '@angular/core';
-
-import { NgxCarousel } from 'ngx-carousel';
 
 declare var $: any;
 
@@ -82,8 +80,8 @@ export class HomeComponent implements AfterViewInit {
           '<img src="assets/images/prev1.png" alt="Previous" />',
           '<img src="assets/images/n1.png" alt="Next" />'
         ],
-        // autoplay: true,
-        // autoplayTimeout: 3000,
+        autoplay: true,
+        autoplayTimeout: 3000,
         responsive: {
           0: {
             items: 1
@@ -157,10 +155,7 @@ export class HomeComponent implements AfterViewInit {
       }
     });
 
-
   }
-
-
 
       feedtitle= 'proin gravida';
       feedname= 'proin gravida';

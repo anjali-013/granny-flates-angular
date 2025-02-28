@@ -1,0 +1,54 @@
+.home_page h2 {
+    text-align: center;
+}
+
+.example-card {
+    max-width: 400px;
+}
+
+.example-card-footer {
+    padding: 16px;
+}
+
+.how-its-work-btn:hover {
+    background-color: #208678;
+}
+
+.how-its-work-btn {
+    height: 60px;
+    width: 230px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4B4B4B;
+}
+
+a.how-work-btn-txt {
+    font-family: public sans;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+.home_page p {
+    text-align: center;
+    font-family: public sans;
+    margin-bottom: 20px !important;
+    margin-top: 10px !important;
+}
+
+.home_page {
+    background-color: white;
+}
+
+.card-box {
+    text-align: center;
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, .2);
+    padding: 0px;
+    margin-top: 15px;
+    width: 100%;
+    background-color: #fff;
+}

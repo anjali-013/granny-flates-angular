@@ -1,0 +1,219 @@
+.service-page h2 {
+    text-align: center;
+}
+.service-page .owl-dots {
+    display: none !important;
+}
+.service-page .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+.service-page .owl-theme .owl-nav [class*=owl-]:hover {
+    background: unset !important;
+    color: #FFF;
+    text-decoration: none;
+}
+.owl-carousel {
+    display: block;
+    width: 100%;
+  padding: 10px;
+}
+
+
+
+.set {
+    display: flex;
+}
+
+button.studio {
+    border: 0;
+    background: white;
+    margin-right: 20px !important;
+    margin-left: auto;
+    padding: 0px 10px;
+    height: 25px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: public sans;
+}
+
+button.studio:hover {
+    background: #208678;
+    color: white;
+}
+
+.set p {
+    font-size: 24px !important;
+    margin-bottom: 0px !important;
+
+}
+
+.set p:hover {
+    color: #208678;
+
+}
+
+.service-page .thumbnail.item a {
+    text-decoration: none;
+    color: black;
+}
+
+.price p {
+    font-size: 16px !important;
+}
+
+img.img-responsive:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+.price p:hover {
+    color: #208678;
+}
+
+button img {
+    height: 35px;
+    width: 35px;
+}
+
+.service-page .owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: right !important;
+}
+
+.price p {
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+}
+.service-page .active.center.owl-item:before {
+    content: "";
+    height: 466px !important;
+    width: 400px;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #208678;
+    top: 30px;
+    left: 0;
+}
+
+@media (max-width: 1281px) {
+h2 {
+    font-size: 60px !important;
+}
+}
+
+@media (max-width: 1199px) {
+h2 {
+    font-size: 50px !important;
+    margin-bottom: 0 !important;
+}
+.set p {
+    font-size: 18px !important;
+    margin-bottom: 0px !important;
+}
+.price p {
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
+}
+button.studio {
+    margin-right: 15px !important;
+    margin-top: 2px !important;
+    font-size: 15px !important;
+}
+
+}
+
+@media (max-width: 1025px) {
+h2 {
+    font-size: 50px !important;
+}
+}
+
+@media (max-width: 991px) {
+h2 {
+    font-size: 40px !important;
+    margin-bottom: 0 !important;
+}
+.set p {
+    font-size: 15px !important;
+}
+.price p {
+    font-size: 11px !important;
+}
+button.studio {
+    margin-top: -3px !important;
+    font-size: 12px !important;
+    padding: 0 6px !important;
+}
+}
+
+@media (max-width:913px) {
+button.studio {
+    margin-right: 18px !important;
+}
+}
+
+
+@media (max-width: 575px) {
+h2 {
+    font-size: 29px !important;
+}
+button.studio {
+    margin-right: 17px !important;
+}
+}
+
+@media (max-width: 415px) {
+    h2 {
+        font-size: 28px !important;
+    }
+}
+
+@media (max-width: 391px) {
+h2 {
+    font-size: 26px !important;
+}
+}
+
+
+
+@media (max-width: 376px) {
+h2 {
+    font-size: 22px !important;
+}
+button.studio {
+    margin-right: 25px !important;
+}
+.price p {
+    font-size: 11px !important;
+    margin-left: 10px;
+}
+.set p {
+    font-size: 14px !important;
+    margin-left: 10px;
+}
+}
+
+@media (max-width: 345px) {
+h2 {
+    font-size: 20px !important;
+}
+button.studio {
+    margin-right: 27px !important;
+}
+.price p {
+    margin-left: 10px;
+}
+
+.set p {
+    margin-left: 10px;
+}
+}
+
+
+@media (max-width: 321px) {
+h2 {
+    font-size: 20px !important;
+}
+}

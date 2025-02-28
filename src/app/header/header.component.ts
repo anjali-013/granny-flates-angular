@@ -1,41 +1,33 @@
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import{ TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
+import { RouterModule } from '@angular/router';
 import { LoginComponent } from '../login/login.component';
-
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: false,
-  
+  //  imports: [CommonModule, RouterModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-
-
 export class HeaderComponent {
-  title = 'app';
+ constructor(translate: TranslateService,private dialog: MatDialog) {
+    translate.addLangs(['en', 'hi', 'de', 'fr']); // ✅ Ensure all languages are listed
+    translate.setDefaultLang('en');
+  } 
+ 
 
-  constructor(
-    private dialog: MatDialog,
-    @Inject(PLATFORM_ID) private platformId: Object
-  ) {}
-
-  openLogin() {
-    if (isPlatformBrowser(this.platformId)) {
-      const dialogRef = this.dialog.open(LoginComponent, {
-        width: '400px',
-        data: { exampleData: 'value' },
-      });
-
-      dialogRef.afterClosed().subscribe((result: any) => {
-        if (result) {
-          console.log('User logged in with:', result);
-        } else {
-          console.log('Login cancelled');
-        }
-      });
+  translate: TranslateService =inject(TranslateService);
+  
+    translateText(lang: string){
+  this.translate.use(lang);
+    }
+  
+    openLogin(): void {
+      this.dialog.open(LoginComponent); // This opens the LoginComponent dialog
     }
   }
-
-}
+  

@@ -1,0 +1,192 @@
+p.dialog-text {
+    margin-bottom: 5px !important;
+}
+
+button.dialog-btn {
+    font-size: 18px;
+    height: 40px;
+    width: 120px;
+    color: white;
+    background-color: #4b4b4b;
+    border: 0;
+}
+
+p.text {
+    margin-bottom: 0 !important;
+}
+
+button.dialog-btn:hover {
+    background-color: #208678;
+}
+
+.dialog-box {
+    height: 29rem;
+    width: 100%;
+    padding: 145px 46px;
+    background-color: #F3FCFB;
+}
+
+
+@media (max-width: 1281px) {
+    .dialog-box {
+        height: 27rem;
+        width: 100%;
+        padding: 110px 45px
+    }
+}
+
+@media (max-width: 1025px) {
+    .dialog-box {
+        height: 24rem;
+        padding: 90px 27px;
+    }
+}
+
+@media (max-width: 821px) {
+    .dialog-box[_ngcontent-ng-c1634444749] {
+        height: 22rem;
+    }
+
+    p.dialog-text {
+        margin-bottom: 5px !important;
+        font-size: 22px;
+    }
+
+    p.text {
+        font-size: 22px;
+        margin-bottom: 0 !important;
+    }
+
+    .dialog-box {
+        height: 23rem;
+        padding: 90px 40px;
+    }
+}
+
+@media (max-width: 769px) {
+    .dialog-box {
+        height: 21rem;
+        padding: 70px 16px;
+    }
+
+    p.dialog-text {
+        margin-bottom: 0px !important;
+    }
+
+    button.dialog-btn {
+        font-size: 16px;
+        height: 35px;
+        width: 105px;
+    }
+}
+
+@media (max-width: 541px) {
+    p.dialog-text {
+        font-size: 20px;
+    }
+
+    p.text[_ngcontent-ng-c1634444749] {
+        font-size: 19px;
+    }
+
+        .dialog-box {
+            height: 20rem;
+            padding: 70px 30px;
+        }
+
+}
+
+@media (max-width: 431px) {
+    mat-dialog-content p {
+        font-size: 13px;
+    }
+
+    button.dialog-btn {
+        font-size: 14px;
+        height: 30px;
+        width: 95px;
+    }
+
+    .dialog-box {
+        height: 20rem;
+        padding: 45px 50px;
+    }
+}
+
+
+@media (max-width: 426px) {
+
+    p.dialog-text {
+        margin-bottom: 0px !important;
+    }
+
+    mat-dialog-content p {
+        font-size: 15px;
+    }
+
+    button.dialog-btn {
+        font-size: 15px;
+        height: 33px;
+        width: 100px;
+    }
+
+    .dialog-box {
+        height: 18rem;
+        padding: 60px 20px;
+    }
+
+}
+
+@media (max-width: 413px) {
+
+    .dialog-box {
+        height: 18rem;
+        padding: 45px 11px;
+    }
+
+    p.text[_ngcontent-ng-c1634444749][_ngcontent-ng-c1634444749] {
+        font-size: 16px;
+    }
+
+    mat-dialog-content p {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 376px) {
+    mat-dialog-content p {
+        font-size: 13px !important;
+    }
+
+    button.dialog-btn {
+        font-size: 13px;
+        height: 30px;
+        width: 90px;
+    }
+
+    .dialog-box {
+        height: 18rem;
+        padding: 50px 16px;
+    }
+
+
+}
+
+@media (max-width: 321px) {
+    mat-dialog-content p {
+        font-size: 11px !important;
+    }
+
+    .dialog-box {
+        height: 18rem;
+        padding: 50px 21px;
+    }
+
+
+    button.dialog-btn[_ngcontent-ng-c1634444749] {
+        font-size: 12px;
+        height: 28px;
+        width: 85px;
+    }
+}

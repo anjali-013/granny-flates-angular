@@ -1,0 +1,300 @@
+.project-page span {
+    display: block;
+}
+
+.project-slider {
+    display: flex;
+}
+
+.project-page h2 {
+    margin-bottom: 20px !important;
+}
+
+.project-page mat-card {
+    box-shadow: none !important;
+}
+
+.project-page .thumbnail.item a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-page .mat-mdc-card-content:last-child {
+    padding: 0 !important;
+}
+
+.project-page .owl-carousel1 .owl-item1 img {
+    display: block !important;
+    width: 100%;
+}
+
+.pro-title {
+    display: flex;
+    margin-top: 10px;
+}
+
+.project-page .owl-theme .owl-nav {
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: 0;
+}
+
+.date {
+    margin-left: auto !important;
+}
+
+.date p {
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+    margin-right: 5px;
+}
+
+p.pro-text {
+    font-size: 24px !important;
+    text-align: left;
+    padding: 0 40px;
+}
+
+p.project-title {
+    color: #208678;
+    position: relative;
+    left: 10%;
+    margin-bottom: 10px !important;
+    font-size: 20px !important;
+}
+
+.date p {
+    opacity: 50%;
+}
+
+.date p:hover {
+    opacity: 100% !important;
+}
+
+p.project-title:before {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 2px;
+    background-color: #208678;
+}
+
+.project-page .owl-theme .owl-nav [class*=owl-]:hover {
+    background: unset !important;
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+p.pro-text:hover {
+    color: #208678;
+}
+
+p.project-title:hover {
+    color: black;
+
+}
+
+.owl-item.active.center p.project-title {
+    color: black;
+}
+
+@media (max-width: 1281px) {
+    h2 {
+        font-size: 60px !important;
+    }
+    p.pro-text {
+        font-size: 20px !important;
+    }
+    p.project-title {
+        font-size: 18px !important;
+    }
+
+  
+}
+
+@media (max-width: 1199px) {
+    h2 {
+        font-size: 50px !important;
+        margin-bottom: 0 !important;
+    }
+    .project-page .owl-item.active.center img {
+        height: 400px;
+        height: 300px !important;
+    }
+    p.pro-text {
+        font-size: 18px !important;
+        padding: 0 35px !important;
+    }
+
+    .date p {
+        font-size: 16px !important;
+    }
+
+    p.project-title:before {
+        left: -25px !important;
+        width: 20px !important;
+    }
+}
+
+@media (max-width: 1025px) {
+    h2 {
+        font-size: 50px !important;
+    }
+    
+    p.pro-text {
+        font-size: 17px !important;
+    }
+
+    p.project-title {
+        font-size: 15px !important;
+    }
+    
+    p.project-title:before {
+        left: -32px !important;
+        width: 25px !important;
+    }
+
+    p.pro-text {
+        padding: 0 30px !important;
+    }
+    .date p {
+        font-size: 15px !important;
+    }
+
+}
+
+@media (max-width: 991px) {
+    h2 {
+        font-size: 40px !important;
+        margin-bottom: 0 !important;
+    }
+    p.project-title {
+        left: 10% !important;
+    }
+    p.project-title:before {
+        left: -18px !important;
+        width: 16px !important;
+        height: 1px;
+    }
+
+    p.project-title {
+        font-size: 14px !important;
+    }
+    p.project-title {
+        font-size: 11px !important;
+        margin-bottom: 3% !important;
+    }
+
+    .date p {
+        font-size: 11px !important;
+        margin-bottom: 0% !important;
+    }
+
+    p.pro-text {
+        font-size: 14px !important;
+        padding: 0 23px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    h2 {
+        font-size: 29px !important;
+    }
+    p.pro-text {
+        margin-bottom: 0px !important;
+    }
+    p.project-title {
+        margin-bottom: 2% !important;
+        left: 6%;
+    }
+    
+}
+
+@media (max-width: 541px){
+p.project-title {
+    left: 5% !important;
+}
+
+p.project-title:before {
+    left: -21px !important;
+    width: 18px !important;
+}
+}
+
+@media (max-width: 415px) {
+    h2 {
+        font-size: 28px !important;
+    }
+}
+
+
+@media (max-width: 413px) {
+    p.project-title {
+        left: 7% !important;
+    }
+}
+
+
+@media (max-width: 391px) {
+    h2 {
+        font-size: 26px !important;
+    }
+    
+    p.project-title {
+        left: 7% !important;
+    }
+    p.project-title:before {
+        left: -19px !important;
+        width: 17px !important;
+    }
+}
+
+@media (max-width: 376px) {
+    h2 {
+        font-size: 22px !important;
+    }
+    p.pro-text {
+        font-size: 13px !important;
+    }
+
+    .date p {
+        font-size: 10px !important;
+    }
+
+    p.project-title {
+        font-size: 10px !important;
+    }
+
+    p.project-title {
+        margin-bottom: 1% !important;
+    }
+
+}
+
+@media (max-width: 345px) {
+    h2 {
+        font-size: 20px !important;
+    }
+    p.project-title {
+        left: 8% !important;
+    }
+    p.project-title:before {
+        left: -20px !important;
+        width: 18px !important;
+    }
+}
+
+@media (max-width: 321px) {
+    h2 {
+        font-size: 20px !important;
+    }
+    p.project-title {
+        left: 8% !important;
+    }
+
+}
