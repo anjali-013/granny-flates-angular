@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/about/about.component.css"],
+  "sourcesContent": [".about-heading\r\n{position: absolute;\r\n    content: \"\";\r\n    z-index: 1;\r\n    top: 13%;\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n}"],
+  "mappings": ";AAAA,CAAC;AACA,YAAU;AACP,WAAS;AACT,WAAS;AACT,OAAK;AACL,QAAM;AACN,aAAW,WAAW;AAC1B;",
+  "names": []
+}

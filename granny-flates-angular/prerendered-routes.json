@@ -1,0 +1,16 @@
+{
+  "routes": {
+    "/": {},
+    "/about": {},
+    "/carousal": {},
+    "/footer": {},
+    "/gallery": {},
+    "/header": {},
+    "/home": {},
+    "/project": {},
+    "/services": {},
+    "/sign in": {},
+    "/sign up": {},
+    "/thank-you": {}
+  }
+}
